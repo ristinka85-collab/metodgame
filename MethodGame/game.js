@@ -18,37 +18,37 @@ const img = new Image();
 // Координаты персонажей на фотографии
 const characters = {
     'character-1': { name: 'Володя Праздничный убийца', found: false, coords: [1578, 785, 1610, 879], id: 'character-1', order: 1, mugshot: 'MethodGame/Images/mugshots/1.png' },
-    'character-2': { name: 'Григорий Белых Липецкий душитель', found: false, coords: [493, 623, 518, 668], id: 'character-2', order: 2, mugshot: 'MethodGame/images/mugshots/2.png' },
-    'character-3': { name: 'Славик Дачник', found: false, coords: [1129, 276, 1144, 331], id: 'character-3', order: 3, mugshot: 'MethodGame/images/mugshots/3.png' },
-    'character-4': { name: 'Анатолий Головко Турист', found: false, coords: [109, 1217, 135, 1311], id: 'character-4', order: 4, mugshot: 'MethodGame/images/mugshots/4.png' },
-    'character-5': { name: 'Владимир Стриженов Паркурщик', found: false, coords: [1462, 345, 1489, 452], id: 'character-5', order: 5, mugshot: 'MethodGame/images/mugshots/5.png' },
-    'character-6': { name: 'Сергей Цветков Вешатель', found: false, coords: [804, 1246, 840, 1359], id: 'character-6', order: 6, mugshot: 'MethodGame/images/mugshots/6.png' },
-    'character-7': { name: 'Наташа Эксгибиционистка', found: false, coords: [1480, 999, 1510, 1129], id: 'character-7', order: 7, mugshot: 'MethodGame/images/mugshots/7.png' },
-    'character-8': { name: 'Фёдор Яшин Субботник', found: false, coords: [1347, 1278, 1386, 1359], id: 'character-8', order: 8, mugshot: 'MethodGame/images/mugshots/8.png' },
-    'character-9': { name: 'Жорик Таксист', found: false, coords: [1448, 770, 1471, 836], id: 'character-9', order: 9, mugshot: 'MethodGame/images/mugshots/9.png' },
-    'character-10': { name: 'Василий Грач Доктор Смерть', found: false, coords: [263, 458, 288, 510], id: 'character-10', order: 10, mugshot: 'MethodGame/images/mugshots/10.png' },
-    'character-11': { name: 'Рубель Солдат', found: false, coords: [739, 364, 760, 425], id: 'character-11', order: 11, mugshot: 'MethodGame/images/mugshots/11.png' },
-    'character-12': { name: 'Павлик Толмачёв Вязальщик', found: false, coords: [963, 348, 981, 387], id: 'character-12', order: 12, mugshot: 'MethodGame/images/mugshots/12.png' },
-    'character-13': { name: 'Аня Свиридова Мизогинистка', found: false, coords: [607, 631, 630, 683], id: 'character-13', order: 13, mugshot: 'MethodGame/images/mugshots/13.png' },
-    'character-14': { name: 'Михаэль Птаха Тенор', found: false, coords: [701, 866, 720, 913], id: 'character-14', order: 14, mugshot: 'MethodGame/images/mugshots/14.png' },
-    'character-15': { name: 'Никита Школьник', found: false, coords: [51, 830, 67, 875], id: 'character-15', order: 15, mugshot: 'MethodGame/images/mugshots/15.png' },
-    'character-16': { name: 'Алексей Ануфриев Стрелок', found: false, coords: [914, 726, 943, 783], id: 'character-16', order: 16, mugshot: 'MethodGame/images/mugshots/16.png' },
-    'character-17': { name: 'Катя Суворова Свадебный стрелок', found: false, coords: [1497, 150, 1504, 204], id: 'character-17', order: 17, mugshot: 'MethodGame/images/mugshots/17.png' },
-    'character-18': { name: 'Сергей Верещагин Алфавитный убийца', found: false, coords: [1041, 225, 1065, 263], id: 'character-18', order: 18, mugshot: 'MethodGame/images/mugshots/18.png' },
-    'character-19': { name: 'Андрей Пасюк Леший', found: false, coords: [528, 1241, 568, 1368], id: 'character-19', order: 19, mugshot: 'MethodGame/images/mugshots/19.png' },
-    'character-20': { name: 'Вячеслав Малявин Кукольник', found: false, coords: [1821, 1263, 1904, 1387], id: 'character-20', order: 20, mugshot: 'MethodGame/images/mugshots/20.png' },
-    'character-21': { name: 'Вадим Чистяков Бойцовской Маньяк', found: false, coords: [278, 723, 298, 762], id: 'character-21', order: 21, mugshot: 'MethodGame/images/mugshots/21.png' },
-    'character-22': { name: 'Надя Ксенофоб', found: false, coords: [1407, 612, 1420, 637], id: 'character-22', order: 22, mugshot: 'MethodGame/images/mugshots/22.png' },
-    'character-23': { name: 'Вячеслав Онлайн убийца', found: false, coords: [1235, 434, 1249, 518], id: 'character-23', order: 23, mugshot: 'MethodGame/images/mugshots/23.png' },
-    'character-24': { name: 'Алексей Морозов Онлайн убийца', found: false, coords: [1298, 435, 1323, 486], id: 'character-24', order: 24, mugshot: 'MethodGame/images/mugshots/24.png' },
-    'character-25': { name: 'Макс Соколов Чистильщик', found: false, coords: [1078, 1117, 1093, 1167], id: 'character-25', order: 25, mugshot: 'MethodGame/images/mugshots/25.png' },
-    'character-26': { name: 'Михаил Артёмович Чингачгук', found: false, coords: [245, 803, 272, 875], id: 'character-26', order: 26, mugshot: 'MethodGame/images/mugshots/26.png' },
-    'character-27': { name: 'Софья Зиновьевна Училка', found: false, coords: [1840, 1042, 1901, 1184], id: 'character-27', order: 27, mugshot: 'MethodGame/images/mugshots/27.png' },
-    'character-28': { name: 'Николай Пиночет', found: false, coords: [911, 940, 950, 993], id: 'character-28', order: 28, mugshot: 'MethodGame/images/mugshots/28.png' },
-    'character-29': { name: 'Женя Осмысловский', found: false, coords: [406, 922, 421, 981], id: 'character-29', order: 29, mugshot: 'MethodGame/images/mugshots/29.png' },
-    'character-30': { name: 'Есеня Стеклова', found: false, coords: [480, 956, 498, 1016], id: 'character-30', order: 30, mugshot: 'MethodGame/images/mugshots/30.png' },
-    'character-31': { name: 'Игорь Самарин ТМНП', found: false, coords: [1174, 880, 1214, 975], id: 'character-31', order: 31, mugshot: 'MethodGame/images/mugshots/31.png' },
-    'character-32': { name: 'Родион Викторович Меглин', found: false, coords: [1371, 1054, 1401, 1096], id: 'character-32', order: 32, mugshot: 'MethodGame/images/mugshots/32.png' }
+    'character-2': { name: 'Григорий Белых Липецкий душитель', found: false, coords: [493, 623, 518, 668], id: 'character-2', order: 2, mugshot: 'MethodGame/Images/mugshots/2.png' },
+    'character-3': { name: 'Славик Дачник', found: false, coords: [1129, 276, 1144, 331], id: 'character-3', order: 3, mugshot: 'MethodGame/Images/mugshots/3.png' },
+    'character-4': { name: 'Анатолий Головко Турист', found: false, coords: [109, 1217, 135, 1311], id: 'character-4', order: 4, mugshot: 'MethodGame/Images/mugshots/4.png' },
+    'character-5': { name: 'Владимир Стриженов Паркурщик', found: false, coords: [1462, 345, 1489, 452], id: 'character-5', order: 5, mugshot: 'MethodGame/Images/mugshots/5.png' },
+    'character-6': { name: 'Сергей Цветков Вешатель', found: false, coords: [804, 1246, 840, 1359], id: 'character-6', order: 6, mugshot: 'MethodGame/Images/mugshots/6.png' },
+    'character-7': { name: 'Наташа Эксгибиционистка', found: false, coords: [1480, 999, 1510, 1129], id: 'character-7', order: 7, mugshot: 'MethodGame/Images/mugshots/7.png' },
+    'character-8': { name: 'Фёдор Яшин Субботник', found: false, coords: [1347, 1278, 1386, 1359], id: 'character-8', order: 8, mugshot: 'MethodGame/Images/mugshots/8.png' },
+    'character-9': { name: 'Жорик Таксист', found: false, coords: [1448, 770, 1471, 836], id: 'character-9', order: 9, mugshot: 'MethodGame/Images/mugshots/9.png' },
+    'character-10': { name: 'Василий Грач Доктор Смерть', found: false, coords: [263, 458, 288, 510], id: 'character-10', order: 10, mugshot: 'MethodGame/Images/mugshots/10.png' },
+    'character-11': { name: 'Рубель Солдат', found: false, coords: [739, 364, 760, 425], id: 'character-11', order: 11, mugshot: 'MethodGame/Images/mugshots/11.png' },
+    'character-12': { name: 'Павлик Толмачёв Вязальщик', found: false, coords: [963, 348, 981, 387], id: 'character-12', order: 12, mugshot: 'MethodGame/Images/mugshots/12.png' },
+    'character-13': { name: 'Аня Свиридова Мизогинистка', found: false, coords: [607, 631, 630, 683], id: 'character-13', order: 13, mugshot: 'MethodGame/Images/mugshots/13.png' },
+    'character-14': { name: 'Михаэль Птаха Тенор', found: false, coords: [701, 866, 720, 913], id: 'character-14', order: 14, mugshot: 'MethodGame/Images/mugshots/14.png' },
+    'character-15': { name: 'Никита Школьник', found: false, coords: [51, 830, 67, 875], id: 'character-15', order: 15, mugshot: 'MethodGame/Images/mugshots/15.png' },
+    'character-16': { name: 'Алексей Ануфриев Стрелок', found: false, coords: [914, 726, 943, 783], id: 'character-16', order: 16, mugshot: 'MethodGame/Images/mugshots/16.png' },
+    'character-17': { name: 'Катя Суворова Свадебный стрелок', found: false, coords: [1497, 150, 1504, 204], id: 'character-17', order: 17, mugshot: 'MethodGame/Images/mugshots/17.png' },
+    'character-18': { name: 'Сергей Верещагин Алфавитный убийца', found: false, coords: [1041, 225, 1065, 263], id: 'character-18', order: 18, mugshot: 'MethodGame/Images/mugshots/18.png' },
+    'character-19': { name: 'Андрей Пасюк Леший', found: false, coords: [528, 1241, 568, 1368], id: 'character-19', order: 19, mugshot: 'MethodGame/Images/mugshots/19.png' },
+    'character-20': { name: 'Вячеслав Малявин Кукольник', found: false, coords: [1821, 1263, 1904, 1387], id: 'character-20', order: 20, mugshot: 'MethodGame/Images/mugshots/20.png' },
+    'character-21': { name: 'Вадим Чистяков Бойцовской Маньяк', found: false, coords: [278, 723, 298, 762], id: 'character-21', order: 21, mugshot: 'MethodGame/Images/mugshots/21.png' },
+    'character-22': { name: 'Надя Ксенофоб', found: false, coords: [1407, 612, 1420, 637], id: 'character-22', order: 22, mugshot: 'MethodGame/Images/mugshots/22.png' },
+    'character-23': { name: 'Вячеслав Онлайн убийца', found: false, coords: [1235, 434, 1249, 518], id: 'character-23', order: 23, mugshot: 'MethodGame/Images/mugshots/23.png' },
+    'character-24': { name: 'Алексей Морозов Онлайн убийца', found: false, coords: [1298, 435, 1323, 486], id: 'character-24', order: 24, mugshot: 'MethodGame/Images/mugshots/24.png' },
+    'character-25': { name: 'Макс Соколов Чистильщик', found: false, coords: [1078, 1117, 1093, 1167], id: 'character-25', order: 25, mugshot: 'MethodGame/Images/mugshots/25.png' },
+    'character-26': { name: 'Михаил Артёмович Чингачгук', found: false, coords: [245, 803, 272, 875], id: 'character-26', order: 26, mugshot: 'MethodGame/Images/mugshots/26.png' },
+    'character-27': { name: 'Софья Зиновьевна Училка', found: false, coords: [1840, 1042, 1901, 1184], id: 'character-27', order: 27, mugshot: 'MethodGame/Images/mugshots/27.png' },
+    'character-28': { name: 'Николай Пиночет', found: false, coords: [911, 940, 950, 993], id: 'character-28', order: 28, mugshot: 'MethodGame/Images/mugshots/28.png' },
+    'character-29': { name: 'Женя Осмысловский', found: false, coords: [406, 922, 421, 981], id: 'character-29', order: 29, mugshot: 'MethodGame/Images/mugshots/29.png' },
+    'character-30': { name: 'Есеня Стеклова', found: false, coords: [480, 956, 498, 1016], id: 'character-30', order: 30, mugshot: 'MethodGame/Images/mugshots/30.png' },
+    'character-31': { name: 'Игорь Самарин ТМНП', found: false, coords: [1174, 880, 1214, 975], id: 'character-31', order: 31, mugshot: 'MethodGame/Images/mugshots/31.png' },
+    'character-32': { name: 'Родион Викторович Меглин', found: false, coords: [1371, 1054, 1401, 1096], id: 'character-32', order: 32, mugshot: 'MethodGame/Images/mugshots/32.png' }
 };
 
 let nextCharacterOrder = 1;
@@ -181,7 +181,7 @@ function handleCanvasClick(event) {
                 redrawCanvas();
             } else {
                 const highlightImg = new Image();
-                highlightImg.src = `MethodGame/images/masks/${clickedCharacter.id}-mask.png`;
+                highlightImg.src = `MethodGame/Images/masks/${clickedCharacter.id}-mask.png`;
 
                 highlightImg.onload = function() {
                     highlightCache[clickedCharacter.id] = highlightImg;
@@ -283,5 +283,6 @@ if (rulesScreen) {
 // Рендерим список персонажей при загрузке страницы
 
 renderCharacterList();
+
 
 
