@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Grunge';
-    src: url('MethodGame/Assets/fonts/Grunge%20Regular.ttf') format('truetype');
+    src: url('Assets/fonts/Grunge%20Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -56,7 +56,7 @@
 body {
     font-family: sans-serif;
     /* Установка фонового изображения */
-    background-image: url('MethodGame/Assets/backgrounds/sand.png');
+    background-image: url('Assets/backgrounds/sand.png');
     background-size: cover; /* Растягивает изображение, чтобы оно покрыло весь экран */
     background-position: center; /* Центрирует изображение */
     background-repeat: no-repeat; /* Предотвращает повторение изображения */
@@ -75,7 +75,7 @@ body {
     width: 100%;
     height: auto;
     object-fit: contain;
-    cursor: url('MethodGame/Assets/cursors/Shoot1.png') 16 16, auto;
+    cursor: url('Assets/cursors/Shoot1.png') 16 16, auto;
 }
 .info-panel {
     margin-top: 20px;
@@ -211,4 +211,5 @@ body {
     /* background-color: rgba(255, 255, 0, 0.1); /* Легкий желтый эффект при наведении */
 
 }
+
 
