@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Grunge';
-    src: url('MethodGame/Assets/fonts/Grunge Regular.ttf') format('truetype');
+    src: url('MethodGame/Assets/fonts/Grunge%20Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -211,3 +211,4 @@ body {
     /* background-color: rgba(255, 255, 0, 0.1); /* Легкий желтый эффект при наведении */
 
 }
+
