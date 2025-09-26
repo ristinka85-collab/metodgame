@@ -62,7 +62,7 @@ function startGame() {
     }
 
     // Запускаем загрузку основного изображения
-    img.src = 'images/Street2.png';
+    img.src = 'MethodGame/Images/Street2.png';
 
     // Когда изображение загрузится, нарисуем его на холсте
     img.onload = function() {
@@ -281,4 +281,5 @@ if (rulesScreen) {
 
 
 // Рендерим список персонажей при загрузке страницы
+
 renderCharacterList();
