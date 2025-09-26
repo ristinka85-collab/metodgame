@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Grunge';
-    src: url('Assets/fonts/Grunge Regular.ttf') format('truetype');
+    src: url('MethodGame/Assets/fonts/Grunge Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -56,7 +56,7 @@
 body {
     font-family: sans-serif;
     /* Установка фонового изображения */
-    background-image: url('Assets/backgrounds/sand.png');
+    background-image: url('MethodGame/Assets/backgrounds/sand.png');
     background-size: cover; /* Растягивает изображение, чтобы оно покрыло весь экран */
     background-position: center; /* Центрирует изображение */
     background-repeat: no-repeat; /* Предотвращает повторение изображения */
@@ -75,7 +75,7 @@ body {
     width: 100%;
     height: auto;
     object-fit: contain;
-    cursor: url('Assets/cursors/Shoot1.png') 16 16, auto;
+    cursor: url('MethodGame/Assets/cursors/Shoot1.png') 16 16, auto;
 }
 .info-panel {
     margin-top: 20px;
@@ -124,7 +124,7 @@ body {
     transform: translateY(-50%); /* Точная подгонка по вертикали */
     width: 100%;
     height: 10px; /* Высота вашей линии */
-    background: url('Assets/Line/line.png') no-repeat center; /* Путь к изображению */
+    background: url('MethodGame/Assets/Line/line.png') no-repeat center; /* Путь к изображению */
     background-size: 100% auto; /* Растягивает изображение по всей ширине и высоте */
     pointer-events: none; /* Гарантирует, что псевдоэлемент не будет мешать взаимодействию с текстом */
 }
@@ -209,4 +209,5 @@ body {
 /* Опционально: эффект при наведении для обратной связи */
 #kinopoiskLink:hover {
     /* background-color: rgba(255, 255, 0, 0.1); /* Легкий желтый эффект при наведении */
+
 }
