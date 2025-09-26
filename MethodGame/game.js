@@ -17,7 +17,7 @@ const img = new Image();
 
 // Координаты персонажей на фотографии
 const characters = {
-    'character-1': { name: 'Володя Праздничный убийца', found: false, coords: [1578, 785, 1610, 879], id: 'character-1', order: 1, mugshot: 'MethodGame/images/mugshots/1.png' },
+    'character-1': { name: 'Володя Праздничный убийца', found: false, coords: [1578, 785, 1610, 879], id: 'character-1', order: 1, mugshot: 'MethodGame/Images/mugshots/1.png' },
     'character-2': { name: 'Григорий Белых Липецкий душитель', found: false, coords: [493, 623, 518, 668], id: 'character-2', order: 2, mugshot: 'MethodGame/images/mugshots/2.png' },
     'character-3': { name: 'Славик Дачник', found: false, coords: [1129, 276, 1144, 331], id: 'character-3', order: 3, mugshot: 'MethodGame/images/mugshots/3.png' },
     'character-4': { name: 'Анатолий Головко Турист', found: false, coords: [109, 1217, 135, 1311], id: 'character-4', order: 4, mugshot: 'MethodGame/images/mugshots/4.png' },
@@ -283,4 +283,5 @@ if (rulesScreen) {
 // Рендерим список персонажей при загрузке страницы
 
 renderCharacterList();
+
 
