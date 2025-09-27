@@ -1,202 +1,212 @@
 @font-face {
-font-family: 'Grunge';
-    src: url('Assets/fonts/Grunge%20Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Grunge';
+    src: url('Assets/fonts/Grunge%20Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 /* Стили для оверлея правил */
 #rulesScreen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    justify-content: center; /* Центрирует по горизонтали */
-    align-items: center;    /* Центрирует по вертикали */
-    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center;    /* Центрирует по вертикали */
+    z-index: 100;
 }
+
 .rules-container {
-    background-color: #1a1a1a;
-    color: white;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 600px;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column; /* Элементы идут друг под другом */
-    align-items: center;
-    cursor: pointer; /* Показывает, что экран кликабельный */
+    background-color: #1a1a1a;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column; /* Элементы идут друг под другом */
+    align-items: center;
+    cursor: pointer; /* Показывает, что экран кликабельный */
 }
+
 .rules-container h1 {
-    /* ... ваш шрифт ... */
-    font-size: 2em;
-    margin-bottom: 20px;
+    /* ... ваш шрифт ... */
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 #startScreenImage {
-    max-width: 100%;
-    height: auto;
-    max-height: 80vh; /* Ограничиваем высоту изображения 80% от высоты экрана */
-    object-fit: contain; /* Гарантируем, что изображение полностью помещается, сохраняя пропорции */
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-    margin-bottom: 25px;
+    max-width: 100%;
+    height: auto;
+    max-height: 80vh; /* Ограничиваем высоту изображения 80% от высоты экрана */
+    object-fit: contain; /* Гарантируем, что изображение полностью помещается, сохраняя пропорции */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    margin-bottom: 25px;
 }
+
 #welcomeText {
-    font-size: 1em;
-    font-weight: bold;
-    line-height: 1.4;
-    text-shadow: 1px 1px 3px #000;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.4;
+    text-shadow: 1px 1px 3px #000;
 }
 body {
-    font-family: sans-serif;
-    /* Установка фонового изображения */
-    background-image: url('Assets/backgrounds/sand.png');
-    background-size: cover; /* Растягивает изображение, чтобы оно покрыло весь экран */
-    background-position: center; /* Центрирует изображение */
-    background-repeat: no-repeat; /* Предотвращает повторение изображения */
-    background-attachment: fixed; /* Закрепляет фон, чтобы он не прокручивался вместе с контентом */
-    background-color: #f0f0f0; /* Резервный цвет на случай, если изображение не загрузится */
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-    min-height: 100vh;
+    font-family: sans-serif;
+    /* Установка фонового изображения */
+    background-image: url('Assets/backgrounds/sand.png');
+    background-size: cover; /* Растягивает изображение, чтобы оно покрыло весь экран */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Предотвращает повторение изображения */
+    background-attachment: fixed; /* Закрепляет фон, чтобы он не прокручивался вместе с контентом */
+    background-color: #f0f0f0; /* Резервный цвет на случай, если изображение не загрузится */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
 }
 #gameCanvas {
-    border: 2px solid #333;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    cursor: url('Assets/cursors/Shoot1.png') 16 16, auto;
+    border: 2px solid #333;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    cursor: url('Assets/cursors/Shoot1.png') 16 16, auto;
 }
 .info-panel {
-    margin-top: 20px;
-    text-align: center;
+    margin-top: 20px;
+    text-align: center;
 }
 .info-panel p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 #coordinates {
-    font-weight: bold;
-    color: #555;
+    font-weight: bold;
+    color: #555;
 }
 #characterList {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-    /* Активируем CSS Grid */
-    display: grid;
-    /* Устанавливаем, что элементы будут распределяться по столбцам */
-    grid-auto-flow: column;
-    /* Определяем, сколько строк у нас будет (32 персонажа / 3 столбца = ~11 строк) */
-    grid-template-rows: repeat(11, auto);
-    /* Добавляем отступы между элементами */
-    gap: 5px 10px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    /* Активируем CSS Grid */
+    display: grid;
+    /* Устанавливаем, что элементы будут распределяться по столбцам */
+    grid-auto-flow: column;
+    /* Определяем, сколько строк у нас будет (32 персонажа / 3 столбца = ~11 строк) */
+    grid-template-rows: repeat(11, auto);
+    /* Добавляем отступы между элементами */
+    gap: 5px 10px;
 }
 #characterList li {
-    font-size: 0.8em;
-    margin: 0 5px;
-    color: white;
-    transition: color 0.3s ease;
-white-space: nowrap;
-width: max-content;
-font-family: 'Grunge', sans-serif;
-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 0.8em;
+    margin: 0 5px;
+    color: white;
+    transition: color 0.3s ease;
+	white-space: nowrap;
+	width: max-content;
+	font-family: 'Grunge', sans-serif;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);	
 }
 #characterList li.found {
-    color: red;
-position: relative;
+    color: red;
+	position: relative;
 }
 #characterList li.found::after {
-    content: ''; /* Пустое содержимое обязательно */
-    position: absolute; /* Позиционируем относительно родительского элемента (<li>) */
-    left: 0;
-    top: 65%; /* Центрируем по вертикали */
-    transform: translateY(-50%); /* Точная подгонка по вертикали */
-    width: 100%;
-    height: 10px; /* Высота вашей линии */
-    background: url('Assets/Line/line.png') no-repeat center; /* Путь к изображению */
-    background-size: 100% auto; /* Растягивает изображение по всей ширине и высоте */
-    pointer-events: none; /* Гарантирует, что псевдоэлемент не будет мешать взаимодействию с текстом */
+    content: ''; /* Пустое содержимое обязательно */
+    position: absolute; /* Позиционируем относительно родительского элемента (<li>) */
+    left: 0;
+    top: 65%; /* Центрируем по вертикали */
+    transform: translateY(-50%); /* Точная подгонка по вертикали */
+    width: 100%;
+    height: 10px; /* Высота вашей линии */
+    background: url('Assets/Line/line.png') no-repeat center; /* Путь к изображению */
+    background-size: 100% auto; /* Растягивает изображение по всей ширине и высоте */
+    pointer-events: none; /* Гарантирует, что псевдоэлемент не будет мешать взаимодействию с текстом */
 }
 /* Изменённые стили для блока с персонажем */
 .character-to-find {
-    position: fixed; /* Закрепляет блок в окне, чтобы он не прокручивался */
-    top: 20px;
-    right: 20px;
-    width: 150px; /* Уменьшаем размер блока */
-    text-align: center;
-    background-color: transparent;
-    border-radius: 8px;
-    padding: 5px;
-    box-shadow: none;
+    position: fixed; /* Закрепляет блок в окне, чтобы он не прокручивался */
+    top: 20px;
+    right: 20px;
+    width: 150px; /* Уменьшаем размер блока */
+    text-align: center;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: none;
 }
 .character-to-find img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 .character-to-find h2 {
-    margin-top: 5px;
-    font-size: 0.7em; /* Уменьшаем размер шрифта для имени */
-    color: white;
-/*white-space: nowrap;*/
-font-family: Arial, Helvetica, sans-serif; /* Применение нового шрифта */
+    margin-top: 5px;
+    font-size: 0.7em; /* Уменьшаем размер шрифта для имени */
+    color: white;
+	/*white-space: nowrap;*/
+	font-family: Arial, Helvetica, sans-serif; /* Применение нового шрифта */
 }
+
 /* ------------------------------------------------------------------ */
 /* НОВЫЕ СТИЛИ ДЛЯ ФИНАЛЬНОГО ЭКРАНА */
 /* ------------------------------------------------------------------ */
 #finalScreen {
-    position: fixed; /* Закрепляет экран поверх всего */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.95); /* Почти черный, слегка прозрачный фон */
-    display: none; /* Изначально скрыт */
-    justify-content: center; /* Центрирует содержимое по горизонтали */
-    align-items: center; /* Центрирует содержимое по вертикали */
-    z-index: 200; /* Выше всех остальных элементов */
-    opacity: 0; /* Для анимации плавного появления */
-    transition: opacity 1s ease-in-out; /* Анимация плавного появления/скрытия */
-    flex-direction: column; /* Элементы (например, изображение и текст) будут располагаться друг под другом */
+    position: fixed; /* Закрепляет экран поверх всего */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95); /* Почти черный, слегка прозрачный фон */
+    display: none; /* Изначально скрыт */
+    justify-content: center; /* Центрирует содержимое по горизонтали */
+    align-items: center; /* Центрирует содержимое по вертикали */
+    z-index: 200; /* Выше всех остальных элементов */
+    opacity: 0; /* Для анимации плавного появления */
+    transition: opacity 1s ease-in-out; /* Анимация плавного появления/скрытия */
+    flex-direction: column; /* Элементы (например, изображение и текст) будут располагаться друг под другом */
 }
+
 #finalScreen.active {
-    display: flex; /* Показываем, когда активирован JS */
-    opacity: 1; /* Полностью виден, за счет transition произойдет плавное проявление */
+    display: flex; /* Показываем, когда активирован JS */
+    opacity: 1; /* Полностью виден, за счет transition произойдет плавное проявление */
 }
+
 #finalArt {
-    max-width: 90%; /* Ограничиваем размер изображения */
-    max-height: 90vh; /* Используем vh для учета высоты экрана */
-    object-fit: contain; /* Сохраняет пропорции и помещается */
-    border-radius: 10px; /* Немного скруглить углы */
-    box-shadow: 0 0 50px rgba(255, 255, 255, 0.2); /* Легкая тень вокруг изображения */
+    max-width: 90%; /* Ограничиваем размер изображения */
+    max-height: 90vh; /* Используем vh для учета высоты экрана */
+    object-fit: contain; /* Сохраняет пропорции и помещается */
+    border-radius: 10px; /* Немного скруглить углы */
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.2); /* Легкая тень вокруг изображения */
 }
 /* ... (Ваши существующие стили) ... */
+
 /* ------------------------------------------------------------------ */
 /* Стилизация невидимой ссылки на Кинопоиск */
 /* ------------------------------------------------------------------ */
 #kinopoiskLink {
-    position: absolute; /* Абсолютное позиционирование относительно #finalScreen */
-    z-index: 220; /* Выше финального изображения */
-    /* Изначально невидимая, но кликабельная */
-    opacity: 0; 
-    background-color: rgba(255, 0, 0, 0); /* Сделать полностью прозрачной, можно для отладки поставить красный */
-    cursor: pointer; /* Показываем, что это кликабельно */
-    /* Размеры и положение будут установлены JavaScript */
-    width: 0; 
-    height: 0;
-    top: 0;
-    left: 0;
-}
-/* Опционально: эффект при наведении для обратной связи */
-#kinopoiskLink:hover {
-    /* background-color: rgba(255, 255, 0, 0.1); /* Легкий желтый эффект при наведении */
+    position: absolute; /* Абсолютное позиционирование относительно #finalScreen */
+    z-index: 220; /* Выше финального изображения */
+
+    /* Изначально невидимая, но кликабельная */
+    opacity: 0; 
+    background-color: rgba(255, 0, 0, 0); /* Сделать полностью прозрачной, можно для отладки поставить красный */
+
+    cursor: pointer; /* Показываем, что это кликабельно */
+
+    /* Размеры и положение будут установлены JavaScript */
+    width: 0; 
+    height: 0;
+    top: 0;
+    left: 0;
 }
 
+/* Опционально: эффект при наведении для обратной связи */
+#kinopoiskLink:hover {
+    /* background-color: rgba(255, 255, 0, 0.1); /* Легкий желтый эффект при наведении */
+}
