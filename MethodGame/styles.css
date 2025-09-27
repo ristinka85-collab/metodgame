@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'Grunge';
+font-family: 'Grunge';
     src: url('Assets/fonts/Grunge%20Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -17,7 +17,6 @@
     align-items: center;    /* Центрирует по вертикали */
     z-index: 100;
 }
-
 .rules-container {
     background-color: #1a1a1a;
     color: white;
@@ -31,7 +30,6 @@
     align-items: center;
     cursor: pointer; /* Показывает, что экран кликабельный */
 }
-
 .rules-container h1 {
     /* ... ваш шрифт ... */
     font-size: 2em;
@@ -46,7 +44,6 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
     margin-bottom: 25px;
 }
-
 #welcomeText {
     font-size: 1em;
     font-weight: bold;
@@ -62,7 +59,6 @@ body {
     background-repeat: no-repeat; /* Предотвращает повторение изображения */
     background-attachment: fixed; /* Закрепляет фон, чтобы он не прокручивался вместе с контентом */
     background-color: #f0f0f0; /* Резервный цвет на случай, если изображение не загрузится */
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,14 +103,14 @@ body {
     margin: 0 5px;
     color: white;
     transition: color 0.3s ease;
-	white-space: nowrap;
-	width: max-content;
-	font-family: 'Grunge', sans-serif;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);	
+white-space: nowrap;
+width: max-content;
+font-family: 'Grunge', sans-serif;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 #characterList li.found {
     color: red;
-	position: relative;
+position: relative;
 }
 #characterList li.found::after {
     content: ''; /* Пустое содержимое обязательно */
@@ -149,10 +145,9 @@ body {
     margin-top: 5px;
     font-size: 0.7em; /* Уменьшаем размер шрифта для имени */
     color: white;
-	/*white-space: nowrap;*/
-	font-family: Arial, Helvetica, sans-serif; /* Применение нового шрифта */
+/*white-space: nowrap;*/
+font-family: Arial, Helvetica, sans-serif; /* Применение нового шрифта */
 }
-
 /* ------------------------------------------------------------------ */
 /* НОВЫЕ СТИЛИ ДЛЯ ФИНАЛЬНОГО ЭКРАНА */
 /* ------------------------------------------------------------------ */
@@ -171,12 +166,10 @@ body {
     transition: opacity 1s ease-in-out; /* Анимация плавного появления/скрытия */
     flex-direction: column; /* Элементы (например, изображение и текст) будут располагаться друг под другом */
 }
-
 #finalScreen.active {
     display: flex; /* Показываем, когда активирован JS */
     opacity: 1; /* Полностью виден, за счет transition произойдет плавное проявление */
 }
-
 #finalArt {
     max-width: 90%; /* Ограничиваем размер изображения */
     max-height: 90vh; /* Используем vh для учета высоты экрана */
@@ -185,76 +178,23 @@ body {
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.2); /* Легкая тень вокруг изображения */
 }
 /* ... (Ваши существующие стили) ... */
-
 /* ------------------------------------------------------------------ */
 /* Стилизация невидимой ссылки на Кинопоиск */
 /* ------------------------------------------------------------------ */
 #kinopoiskLink {
     position: absolute; /* Абсолютное позиционирование относительно #finalScreen */
     z-index: 220; /* Выше финального изображения */
-
     /* Изначально невидимая, но кликабельная */
     opacity: 0; 
     background-color: rgba(255, 0, 0, 0); /* Сделать полностью прозрачной, можно для отладки поставить красный */
-
     cursor: pointer; /* Показываем, что это кликабельно */
-
     /* Размеры и положение будут установлены JavaScript */
     width: 0; 
     height: 0;
     top: 0;
     left: 0;
 }
-
 /* Опционально: эффект при наведении для обратной связи */
 #kinopoiskLink:hover {
     /* background-color: rgba(255, 255, 0, 0.1); /* Легкий желтый эффект при наведении */
 }
-
-/* ================================================================== */
-/* НОВЫЕ СТИЛИ: ЭКРАН ПОВОРОТА (Rotate Screen) */
-/* ================================================================== */
-#rotateScreen {
-    /* Скрыто по умолчанию (в горизонтальной ориентации) */
-    display: none; 
-    
-    /* Занимает весь экран и фиксируется */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    
-    /* Стилизация */
-    background-color: rgba(0, 0, 0, 0.95); /* Полупрозрачный черный фон */
-    color: white;
-    z-index: 9999; /* Должен быть выше всех остальных элементов */
-    text-align: center;
-    padding: 20px;
-    font-size: 1.5em;
-    line-height: 1.5;
-    
-    /* Центрирование текста */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* МЕДИАЗАПРОС: Показывает оверлей ТОЛЬКО, когда ориентация экрана - вертикальная (portrait). */
-@media (orientation: portrait) {
-    #rotateScreen {
-        display: flex; /* Показываем в вертикальной ориентации */
-    }
-}
-
-/* ================================================================== */
-/* НОВЫЕ СТИЛИ: АДАПТИВНОСТЬ ДЛЯ СПИСКА ПЕРСОНАЖЕЙ НА МОБИЛЬНЫХ */
-/* Переключает список из колонок в строки на узких экранах, чтобы не было горизонтальной прокрутки. */
-/* ================================================================== */
-@media (max-width: 768px) {
-    #characterList {
-        /* Отменяем колончатое отображение для узких экранов */
-        grid-auto-flow: row; 
-        /* Устанавливаем 3 или 4 столбца, чтобы элементы были рядом */
-        grid-template-rows: unset; 
-        grid-template-columns: repeat(3,
