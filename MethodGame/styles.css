@@ -59,6 +59,7 @@ body {
     background-repeat: no-repeat; /* Предотвращает повторение изображения */
     background-attachment: fixed; /* Закрепляет фон, чтобы он не прокручивался вместе с контентом */
     background-color: #f0f0f0; /* Резервный цвет на случай, если изображение не загрузится */
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,3 +199,4 @@ font-family: Arial, Helvetica, sans-serif; /* Применение нового 
 #kinopoiskLink:hover {
     /* background-color: rgba(255, 255, 0, 0.1); /* Легкий желтый эффект при наведении */
 }
+
