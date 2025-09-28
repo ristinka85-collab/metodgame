@@ -249,4 +249,15 @@ body {
         max-width: 100%;
     }
 }
+ #characterList li {
+        font-size: 0.5em; /* Уменьшаем базовый размер 0.8em до 0.65em на мобильных */
+        margin: 2px 0;   
+        line-height: 1.1; 
+    }
+    
+    /* Опционально: Уменьшение шрифта для имени персонажа, которого ищем */
+    .character-to-find h2 {
+        font-size: 0.6em; 
+    }
+}
 
