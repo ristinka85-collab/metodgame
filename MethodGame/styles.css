@@ -1,3 +1,7 @@
+#gameContainer {
+    /* Это правило скрывает игру при старте */
+    display: none; 
+	}
 @font-face {
 	font-family: 'Grunge';
     src: url('Assets/fonts/Grunge%20Regular.ttf') format('truetype');
@@ -210,3 +214,4 @@ body {
 #kinopoiskLink:hover {
     /* background-color: rgba(255, 255, 0, 0.1); /* Легкий желтый эффект при наведении */
 }
+
