@@ -60,7 +60,10 @@ function startGame() {
     if (rulesScreen) {
         rulesScreen.style.display = 'none';
     }
-
+ // Показываем основной контейнер игры, который мы скрыли в CSS
+    if (gameContainer) {
+        gameContainer.style.display = 'block'; // или 'flex'
+    }
     // Запускаем загрузку основного изображения
     img.src = 'MethodGame/Images/Street2.png';
 
@@ -283,6 +286,7 @@ if (rulesScreen) {
 // Рендерим список персонажей при загрузке страницы
 
 renderCharacterList();
+
 
 
 
