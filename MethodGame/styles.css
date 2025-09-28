@@ -214,4 +214,20 @@ body {
 #kinopoiskLink:hover {
     /* background-color: rgba(255, 255, 0, 0.1); /* Легкий желтый эффект при наведении */
 }
+@media (max-width: 600px) {
+    
+    /* 1. ИСПРАВЛЕНИЕ СПИСКА ПЕРСОНАЖЕЙ */
+    #characterList {
+        /* Меняем горизонтальный поток на вертикальный */
+        grid-auto-flow: row;
+        
+        /* Вместо того, чтобы ограничивать 11 строк, мы задаем 2 колонки */
+        grid-template-rows: unset; 
+        grid-template-columns: repeat(2, minmax(100px, 1fr)); /* 2 колонки, которые растягиваются */
+        
+        /* Гарантируем, что список не будет шире экрана */
+        width: 95%;
+        margin: 10px auto; /* Центрируем список */
+    }
+}
 
